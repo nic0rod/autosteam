@@ -1,4 +1,4 @@
-function autocorregir() {
+function autocorregir() { 
   let texto = document.getElementById("texto").value;
 
   const correcciones = {
@@ -25,7 +25,7 @@ function autocorregir() {
     "\\bURL\\b": "Dirección Web",
     "\\bHTTP\\b": "Protocolo de Transferencia de Hipertexto",
 
-    // Lenguaje juvenil y redes sociales
+    // Redes sociales y slang
     "\\bXD\\b": "risa o carcajada",
     "\\bLOL\\b": "riendo a carcajadas",
     "\\bOMG\\b": "¡Dios mío!",
@@ -33,7 +33,7 @@ function autocorregir() {
     "\\bBRB\\b": "vuelvo enseguida",
     "\\bBTW\\b": "por cierto",
     "\\bTT\\b": "tendencia en redes sociales",
-    "\\bDM\\b": "mensaje privado",
+    "\\bDM\\b": "mensaje directo",
     "\\bIG\\b": "Instagram",
     "\\bFB\\b": "Facebook",
     "\\bYT\\b": "YouTube",
@@ -44,12 +44,11 @@ function autocorregir() {
     "\\bCRINGE\\b": "vergonzoso o incómodo",
     "\\bBAE\\b": "persona querida (novio/a)",
     "\\bBFF\\b": "mejor amigo/a para siempre",
-    "\\bAF\\b": "muy (ej: loco AF = muy loco)",
+    "\\bAF\\b": "muy",
     "\\bFTW\\b": "para ganar / lo mejor",
-    "\\bGG\\b": "buen juego (usado al finalizar una partida)",
+    "\\bGG\\b": "buen juego",
     "\\bNOOB\\b": "novato sin experiencia",
     "\\bPOV\\b": "punto de vista",
-    "\\bOMG\\b": "¡Dios mío!",
     "\\bIDK\\b": "no lo sé",
     "\\bILY\\b": "te quiero",
     "\\bGRWM\\b": "prepárate conmigo",
@@ -57,16 +56,17 @@ function autocorregir() {
     "\\bTLDR\\b": "resumen rápido",
     "\\bIRL\\b": "en la vida real",
     "\\bJK\\b": "es broma",
-    "\\bRN\\b": "ahora mismo"
-     // Adolescentes
+    "\\bRN\\b": "ahora mismo",
+
+    // Abreviaciones informales (en minúscula)
     "tqm": "te quiero mucho",
     "tkm": "te kiero mucho",
     "xfa": "por favor",
     "xq": "porque",
     "xk": "porque",
-    "x": "por",
-    "q": "que",
-    "k": "que",
+    "\\bx\\b": "por",
+    "\\bq\\b": "que",
+    "\\bk\\b": "que",
     "bn": "bien",
     "mal": "mal",
     "toy": "estoy",
@@ -81,38 +81,14 @@ function autocorregir() {
     "bye": "adiós",
     "a2": "adiós",
     "bb": "bebé",
+    "bby": "bebé",
     "xoxo": "besos y abrazos",
     "uwu": "emoticon tierno",
     "owo": "emoticon sorprendido",
     "qtl": "qué tal",
     "idc": "no me importa",
-    "bby": "bebé",
 
-    // Redes sociales
-    "dm": "mensaje directo",
-    "pm": "mensaje privado",
-    "tt": "tendencia",
-    "ig": "instagram",
-    "fb": "facebook",
-    "yt": "youtube",
-    "tiktok": "plataforma de videos",
-    "fyp": "para ti",
-    "grwm": "prepárate conmigo",
-    "pov": "punto de vista",
-    "nsfw": "contenido no apto para el trabajo",
-    "tbt": "jueves de recuerdo",
-    "ama": "pregúntame lo que sea",
-    "lmao": "me muero de risa",
-    "fomo": "miedo a perderse algo",
-    "goat": "el mejor de todos los tiempos",
-    "cap": "mentira",
-    "nocap": "verdad",
-    "ratio": "más respuestas que likes",
-    "w": "victoria",
-    "l": "derrota",
-    "slay": "lucirse",
-
-    // Tecnología y gaming
+    // Tecnología y gaming (minúsculas)
     "afk": "lejos del teclado",
     "gg": "buen juego",
     "noob": "novato sin experiencia",
@@ -126,19 +102,23 @@ function autocorregir() {
     "wifi": "red inalámbrica",
     "ping": "latencia",
 
-    // Slang internacional
-    "idk": "no lo sé",
+    // Slang internacional (minúscula)
     "ikr": "¡lo sé, verdad!",
-    "ily": "te quiero",
-    "rn": "ahora mismo",
     "ttyl": "hablamos luego",
-    "bff": "mejor amigo para siempre",
     "omg": "¡dios mío!",
     "wtf": "¿qué demonios?",
     "lol": "me estoy riendo",
     "rofl": "riendo en el suelo",
     "smh": "negando con la cabeza",
-    "tbh": "para ser honesto"
+    "tbh": "para ser honesto",
+    "fomo": "miedo a perderse algo",
+    "goat": "el mejor de todos los tiempos",
+    "cap": "mentira",
+    "nocap": "verdad",
+    "ratio": "más respuestas que likes",
+    "w": "victoria",
+    "l": "derrota",
+    "slay": "lucirse"
   };
 
   for (const abreviacion in correcciones) {
@@ -146,5 +126,5 @@ function autocorregir() {
     texto = texto.replace(regex, correcciones[abreviacion]);
   }
 
-  document.getElementById("resultado").innerText = texto;
+  document.getElementById("resultado").textContent = texto;
 }
