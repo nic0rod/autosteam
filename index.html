@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoSTEAM</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>AutoSTEAM</h1>
+    <p class="subtitulo">Corrige automáticamente abreviaciones modernas en español</p>
+
+    <textarea id="texto" placeholder="Escribe aquí tus frases con abreviaciones..."></textarea>
+
+    <button onclick="autocorregir()">Autocorregir</button>
+
+    <div id="resultado-container">
+      <h2>Texto corregido:</h2>
+      <div id="resultado"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Desarrollado por AutoSTEAM &copy; 2025</p>
+  </footer>
+
+  <script src="autocorrector.js"></script>
+</body>
+</html>
