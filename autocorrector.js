@@ -26,9 +26,10 @@ function autocorregir() {
     "\\bHTTP\\b": "Protocolo de Transferencia de Hipertexto",
 
     // Redes sociales y slang
-    "\\bXD\\b": "risa o carcajada",
-    "\\bLOL\\b": "riendo a carcajadas",
+    "\\bXD\\b": "que risa",
+    "\\bLOL\\b": "que risa",
     "\\bOMG\\b": "¡Dios mío!",
+    "\\bWTH\\b": "¿Que demonios?", 
     "\\bWTF\\b": "¿Qué demonios?",
     "\\bBRB\\b": "vuelvo enseguida",
     "\\bBTW\\b": "por cierto",
@@ -37,15 +38,15 @@ function autocorregir() {
     "\\bIG\\b": "Instagram",
     "\\bFB\\b": "Facebook",
     "\\bYT\\b": "YouTube",
-    "\\bTikTok\\b": "plataforma de videos cortos",
-    "\\bFYP\\b": "Para ti (página principal en TikTok)",
+    "\\bTW\\b": "Twitter",
+    "\\bFYP\\b": "Para ti",
     "\\bNSFW\\b": "contenido no apto para el trabajo",
     "\\bTBT\\b": "jueves de recuerdo",
-    "\\bCRINGE\\b": "vergonzoso o incómodo",
-    "\\bBAE\\b": "persona querida (novio/a)",
-    "\\bBFF\\b": "mejor amigo/a para siempre",
+    "\\bCRINGE\\b": "vergonzosos o incómodos",
+    "\\bBAE\\b": "amor",
+    "\\bBFF\\b": "mejor amigo",
     "\\bAF\\b": "muy",
-    "\\bFTW\\b": "para ganar / lo mejor",
+    "\\bFTW\\b": "para ganar",
     "\\bGG\\b": "buen juego",
     "\\bNOOB\\b": "novato sin experiencia",
     "\\bPOV\\b": "punto de vista",
@@ -89,7 +90,7 @@ function autocorregir() {
     "\\bidc\\b": "no me importa",
 
     // Tecnología y gaming
-    "\\bafk\\b": "lejos del teclado",
+    "\\bafk\\b": "quieto",
     "\\bgg\\b": "buen juego",
     "\\bnoob\\b": "novato sin experiencia",
     "\\bop\\b": "muy poderoso",
@@ -101,6 +102,7 @@ function autocorregir() {
     "\\busb\\b": "puerto universal serial",
     "\\bwifi\\b": "red inalámbrica",
     "\\bping\\b": "latencia",
+    "\\bmatch\\b": "partida", 
 
     // Slang internacional
     "\\bikr\\b": "¡lo sé, verdad!",
